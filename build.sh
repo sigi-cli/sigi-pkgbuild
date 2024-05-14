@@ -65,7 +65,7 @@ run() {
 }
 
 # Exit with help message if no input.
-if [ "$@unset" = unset ]
+if [ "$*unset" = unset ]
 then
     help && exit
 fi
