@@ -11,12 +11,16 @@ source=("$pkgname-$pkgver.tar.gz::https://crates.io/api/v1/crates/sigi/$pkgver/d
 sha256sums=('9fb629fd2e4644a8e4f173d73c45efad005afe23dd0dbfb0d51dec2f539a28e4')
 
 build() {
+	export CARGO_TARGET_DIR=target
+
 	cd "$pkgname-$pkgver"
 
 	cargo build --release --locked
 }
 
 check() {
+	export CARGO_TARGET_DIR=target
+
 	cd "$pkgname-$pkgver"
 
 	# Tests are skipped until https;//github.com/hiljusti/sigi/issues/19
