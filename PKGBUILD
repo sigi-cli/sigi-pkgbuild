@@ -1,7 +1,7 @@
 # Maintainer: J.R. Hill <justin@so.dang.cool>
 pkgname="sigi"
 pkgver="3.7.1"
-pkgrel=1
+pkgrel=2
 pkgdesc="Organization CLI for people who hate organization"
 arch=('x86_64' 'aarch54')
 url="https://github.com/sigi-cli/sigi"
@@ -34,4 +34,3 @@ package() {
 
 	install -Dm644 "sigi.1" "$pkgdir/usr/share/man/man1/sigi.1"
 }
-
