@@ -2,6 +2,11 @@
 
 # Maintaining
 
+Repos:
+
+- Canonical AUR repo: https://aur.archlinux.org/packages/sigi
+- GitHub mirror: https://github.com/sigi-cli/sigi-pkgbuild
+
 Packaging references:
 
 - https://wiki.archlinux.org/title/AUR_submission_guidelines

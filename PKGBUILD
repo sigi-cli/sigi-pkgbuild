@@ -23,7 +23,7 @@ check() {
 
 	cd "$pkgname-$pkgver"
 
-	# Tests are skipped until https;//github.com/hiljusti/sigi/issues/19
+	# Tests are skipped until https://github.com/hiljusti/sigi/issues/19
 	SKIP_BATS_TESTS=1 cargo test --release --locked
 }
 
